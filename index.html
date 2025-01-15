@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Tic Tac Toe Game</title>
+    
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js"></script>
+  </head>
+  <body>
+
+    <h1>Tic Tac Toe</h1>
+    <h2 id="scoreTracker" class="display_player">X - 0, O - 0</h2>
+    <h2>It's your turn, <span id="showplayer" class="display_player" onclick="play('player')" >Player X</span>.</h2>
+    <h2> Timer: <span id="showtimer">Starting</span></h2>
+
+    <div class="game_board" style="pointer-events: auto;">
+      <div class='row'>
+        <div class="one" onclick="play('1')"><span class="xo" id="box1"> </span></div>
+        <div class="two" onclick="play('2')"><span class="xo" id="box2"> </span></div>
+        <div class="three" onclick="play('3')"><span class="xo" id="box3"> </span></div>
+      </div>
+      <div class='row'>
+        <div class="four" onclick="play('4')"><span class="xo" id="box4"> </span></div>
+        <div class="five" onclick="play('5')"><span class="xo" id="box5"> </span></div>
+        <div class="six" onclick="play('6')"><span class="xo" id="box6"> </span></div>
+      </div>
+      <div class='row'>
+        <div class="seven" onclick="play('7')"><span class="xo" id="box7"> </span></div>
+        <div class="eight" onclick="play('8')"><span class="xo" id="box8"> </span></div>
+        <div class="nine" onclick="play('9')"><span class="xo" id="box9"> </span></div>
+      </div>
+    </div>
+
+    <h3><input type="checkbox" id="myCheck" onclick="computer()" unchecked>Play against Computer</h3>
+    <button class="new_game" onclick="newGame()">New Game</button>
+    <button class="reset" onclick="resetGame()">Reset</button>
+    <h3><input type="checkbox" id="darkmode" onclick="darkmode()" unchecked>Dark Mode</h3>
+
+  </body>
+
+</html>
